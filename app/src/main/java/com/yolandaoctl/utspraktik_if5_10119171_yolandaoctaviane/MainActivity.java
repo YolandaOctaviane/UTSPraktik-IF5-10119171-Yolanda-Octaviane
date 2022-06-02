@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (tes == "Rapid Tes"){
                 radioSexGroup.check(R.id.rapid);
-            }else if(jk == "PCR"){
+            }else if(tes == "PCR"){
                 radioSexGroup.check(R.id.pcr);
             }
 
@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int selectedId2 = radioHub.getCheckedRadioButtonId();
                 RadioButton radiohubButton = (RadioButton) findViewById(selectedId2);
+
                 intent.putExtra(EXTRA_NIK,nik);
                 intent.putExtra(EXTRA_NAMA,nama);
                 intent.putExtra(EXTRA_TGL,tgl);

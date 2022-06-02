@@ -72,6 +72,8 @@ public class MainActivity2 extends AppCompatActivity {
         btn_ubah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                intent2.putExtra(EXTRA_TES,tes);
+                intent2.putExtra(EXTRA_TGLKON,tglkon);
                 intent2.putExtra(EXTRA_STATUS,"ubah");
                 intent2.putExtra(EXTRA_NIK,nik);
                 intent2.putExtra(EXTRA_NAMA,nama);
